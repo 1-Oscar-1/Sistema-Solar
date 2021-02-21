@@ -1,0 +1,48 @@
+*{padding: 0; margin: 0;}
+body{
+    font-family: 'DotGothic16', sans-serif;
+    background-color: #2a003f;
+}
+/* Se define el tamaño de ancho maximo para el contenido del sitio */
+.limit-container{
+    margin: auto;
+    width: 900px;
+}
+.banner-container{
+    width: 100%;
+    height: 650px;
+
+    background-image: url(img/banner-image.gif);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-bottom: 1px solid #190025;
+}
+.textos-container{
+    height: 650px;
+}
+.textos-container__titulo{
+    padding-top: 300px;
+    color: #FFFFFF;
+    font-size: 50px;
+    letter-spacing: 3px;
+    text-shadow: -3px 3px 0px #fae62d;
+    padding-bottom: 50px;
+}
+.textos-container__button{
+    color: #FFFFFF;
+    font-size: 20px;
+    text-decoration: none;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 10px 30px;
+    border: 2px solid #fcc000;
+    transition: all 0.5s;
+}
+.textos-container__button:hover{
+    color: #190025;
+    font-size: 25px;
+    border: 5px solid #fcc000;
+    background-color: #fae62d;
+}
