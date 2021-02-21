@@ -27,7 +27,7 @@ body{
     color: #FFFFFF;
     font-size: 60px;
     letter-spacing: 5px;
-    text-shadow: -3px 3px 0px #ff8800; /* fae62d */
+    text-shadow: -3px 3px 0px #ff8800;
     padding-bottom: 50px;
 }
 .textos-container__button{
