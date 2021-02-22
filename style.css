@@ -4,6 +4,29 @@ body{
     color: #FFFFFF;
     background-color: #2a003f;
 }
+
+body::-webkit-scrollbar {
+    width: 8px;     /* Tamaño del scroll en horizontal */
+    height: 100%;    /* Tamaño del scroll en vertical */
+}
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+body::-webkit-scrollbar-thumb {
+    background: rgba(250, 230, 45, 0.5);
+    border-radius: 4px;
+}
+/* Cambiamos el fondo cuando esté en hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: rgba(250, 230, 45, 0.7);;
+}
+/* Cambiamos el fondo cuando esté en active */
+body::-webkit-scrollbar-thumb:active {
+    background-color: #fae62d;
+}
+/* Se le quita el fondo al track */
+body::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+    border-radius: 4px
+}
 /* Se define el tamaño de ancho maximo para el contenido del sitio */
 .limit-container{
     margin: auto;
