@@ -1,25 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema Solar</title>
+    <link rel="icon" type="image/png" href="img/icon.png" />
     <!-- Se agregan los estilos -->
     <link rel="stylesheet" href="style.css">
     <!-- Se agregan las fuentes de Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <!-- Banner inicial de la pagina -->
     <div class="banner-container">
         <div class="limit-container">
             <div class="textos-container">
                 <h1 class="textos-container__titulo">Sistema <br> Solar</h1>
-                <a class="textos-container__button" href="">¡Aprender!</a>
+                <a href="#conoce-sistema-solar" class="textos-container__button">¡Aprender!</a>
             </div>
         </div>
     </div>
+    <div class="limit-container">
+        <div class="titulo-container">
+            <h2 id="conoce-sistema-solar">Conoce un poco nuestro Sistema Solar</h2>
+        </div>
+        <div class="sistemaSolar-grid">
+            <div class="sistemaSolar-img">
+                <img src="img/Sistema-solar-completo.png" alt="">
+            </div>
+            <div class="sistemaSolar-text">
+                <p><span style="font-size: 20px;">Sistema Solar</span></p><br>
+                <p>El Sistema Solar es un sistema planetario cuya estrella central es el Sol, alrededor del cual orbitan
+                    o giran varios planetas, planetas enanos y otros cuerpos celestes por efecto de la fuerza de
+                    gravedad.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Se importan scripts para el efecto de smooth-scrolling -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/smooth-scrolling.js"></script>
 </body>
+
 </html>
