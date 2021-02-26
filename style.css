@@ -84,7 +84,6 @@ body::-webkit-scrollbar-track {
     text-align: center;
 }
 .sistemaSolar-grid{
-    height: 300px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 200px;
@@ -105,4 +104,43 @@ body::-webkit-scrollbar-track {
     grid-column: 2;
     box-sizing: border-box;
     padding: 20px;
+    text-align: justify;
+}
+.titulo-planetas{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.planetas-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: minmax(200px);
+    grid-gap: 20px;
+}
+.planeta-tarjeta{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 50px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    transition: all 0.5s;
+}
+.planeta-tarjeta:hover{
+    box-sizing: border-box;
+    border: 1px solid greenyellow;
+    box-shadow: 0 0 20px #4f9;
+}
+.planeta-tarjeta__img{
+    width: 100%;
+    display: flex;
+}
+.planeta-tarjeta__img img{
+    height: 200px;
+    margin: auto;
 }
