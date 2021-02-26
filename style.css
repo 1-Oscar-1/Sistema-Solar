@@ -72,6 +72,8 @@ body::-webkit-scrollbar-track {
     border: 5px solid #fcc000;
     background-color: #fae62d;
 }
+
+/* Estilos de la seccin informacion del Sistema Solar */
 .titulo-container{
     width: 100%;
     height: 200px;
@@ -106,6 +108,7 @@ body::-webkit-scrollbar-track {
     padding: 20px;
     text-align: justify;
 }
+/* Estilos seccion de planetas */
 .titulo-planetas{
     width: 100%;
     height: 200px;
@@ -155,6 +158,7 @@ body::-webkit-scrollbar-track {
     text-align: center;
     margin: 30px 0;
 }
+/* Estilos del footer */
 footer{
     width: 100%;
     height: 100px;
@@ -167,4 +171,55 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* =========================================
+            Responsive
+========================================= */
+
+@media screen and (max-width: 480px){
+    .limit-container{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 30px;
+    }
+    .banner-container{
+        height: 600px;
+        background-size: 200%;
+    }
+    .textos-container{
+        height: 600px;
+    }
+    .textos-container__button{
+        outline: none;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+    .sistemaSolar-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: minmax(200px) minmax(200px);
+    }
+    .sistemaSolar-img{
+        width: 100%;
+        grid-column: 1;
+    }
+    .sistemaSolar-img img{
+        height: 200px;
+    }
+    .sistemaSolar-text{
+        grid-column: 1;
+    }
+    .planetas-grid{
+        grid-template-columns: 1fr;
+    }
+    .planeta-tarjeta{
+        height: 100%;
+    }
+    .planeta-tarjeta:hover{
+        box-shadow: none;
+    }
+    .planeta-tarjeta__img img{
+        width: 100%;
+        height: 100px;
+    }
 }
